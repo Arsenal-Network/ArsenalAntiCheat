@@ -17,6 +17,9 @@
       <module name="net.arsenalnetwork.AntiCheat-1.7.10.api" target="1.8" />
       <module name="net.arsenalnetwork.AntiCheat-1.7.10.main" target="1.8" />
       <module name="net.arsenalnetwork.AntiCheat-1.7.10.test" target="1.8" />
+      <module name="net.arsenalnetwork.ArsenalAntiCheat.api" target="1.8" />
+      <module name="net.arsenalnetwork.ArsenalAntiCheat.main" target="1.8" />
+      <module name="net.arsenalnetwork.ArsenalAntiCheat.test" target="1.8" />
       <module name="net.arsenalnetwork.arsenalmod.Project-Z-Mod.api" target="1.8" />
       <module name="net.arsenalnetwork.arsenalmod.Project-Z-Mod.main" target="1.8" />
       <module name="net.arsenalnetwork.arsenalmod.Project-Z-Mod.test" target="1.8" />
