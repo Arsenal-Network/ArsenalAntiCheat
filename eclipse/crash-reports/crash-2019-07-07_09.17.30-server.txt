@@ -1,0 +1,45 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 07/07/19 9:17 AM
+Description: Exception in server tick loop
+
+java.lang.IllegalArgumentException: Multiple entries with same key: phoenixx=FMLMod:phoenixx{1.7.10 - 1.0.0} and phoenixx=FMLMod:phoenixx{1.7.10 - 1.0.0}
+	at com.google.common.collect.ImmutableMap.checkNoConflict(ImmutableMap.java:150)
+	at com.google.common.collect.RegularImmutableMap.checkNoConflictInBucket(RegularImmutableMap.java:104)
+	at com.google.common.collect.RegularImmutableMap.<init>(RegularImmutableMap.java:70)
+	at com.google.common.collect.ImmutableMap$Builder.build(ImmutableMap.java:254)
+	at com.google.common.collect.Maps.uniqueIndex(Maps.java:1166)
+	at com.google.common.collect.Maps.uniqueIndex(Maps.java:1140)
+	at cpw.mods.fml.common.Loader.identifyMods(Loader.java:366)
+	at cpw.mods.fml.common.Loader.loadMods(Loader.java:489)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:87)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:314)
+	at net.minecraft.server.dedicated.DedicatedServer.startServer(DedicatedServer.java:120)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:445)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:752)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_201, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 167551448 bytes (159 MB) / 259588096 bytes (247 MB) up to 4195155968 bytes (4000 MB)
+	JVM Flags: 1 total; -Xincgc
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1448 5 mods loaded, 0 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+		mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+		FML{7.10.99.99} [Forge Mod Loader] (forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar) 
+		Forge{10.13.4.1448} [Minecraft Forge] (forgeSrc-1.7.10-10.13.4.1448-1.7.10.jar) 
+		phoenixx{1.7.10 - 1.0.0} [Phoenixx Anti-Cheat] (arsenalmod-1.0.2.jar) 
+		phoenixx{1.7.10 - 1.0.0} [Phoenixx Anti-Cheat] (arsenalmod-1.0.2.jar) 
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)
