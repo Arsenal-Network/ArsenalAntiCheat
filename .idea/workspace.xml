@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9c195f8c-1406-4f3c-a07d-2a47fdc86fc8" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/.gradle/" />
+    <ignored path="$PROJECT_DIR$/build/" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="AntiCheat-1.7.10" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="AntiCheat-1.7.10" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="AntiCheat-1.7.10" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixx/packets/AntiCheat_Packet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1735">
+              <caret line="140" column="64" selection-start-line="140" selection-start-column="64" selection-end-line="140" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixx/handlers/AntiCheatHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+              <folding>
+                <element signature="e#473#481#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixx/configs/PhoenixxServerConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="295">
+              <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+              <folding>
+                <element signature="e#1003#1011#0" expanded="true" />
+                <element signature="e#4208#4209#0" expanded="true" />
+                <element signature="e#4246#4247#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>TileGenerator</find>
+      <find>IEnergyReceiver</find>
+      <find>containerFluidMap</find>
+      <find>filledContainerMap</find>
+      <find>emptyContainers</find>
+      <find>getFluidForFilledItem</find>
+      <find>ItemMod</find>
+      <find>ItemBlockGenerator</find>
+      <find>ItemBlockDirectional</find>
+      <find>UNKNOWN</find>
+      <find>MasterRecipeManager</find>
+      <find>findItem</find>
+      <find>getInstance</find>
+      <find>BlockSensor</find>
+      <find>MovingObjectPosition</find>
+      <find>BlockGenerator</find>
+      <find>BlockMod</find>
+      <find>updateEntity</find>
+      <find>NBTTagCompound</find>
+      <find>FluidContainerRegistry</find>
+      <find>isFilledContainer</find>
+      <find>NG_GOOD</find>
+      <find>translateToLocal</find>
+      <find>Arsenal</find>
+      <find>Phoenixx</find>
+      <find>TextFormatting</find>
+      <find>mouse</find>
+      <find>textur</find>
+      <find>LoadedMods_FromLastStart</find>
+      <find>texture</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>ArsenalMod.MOD_ID</replace>
+      <replace>import net.arsenalnetwork.arsenalmod.utilities.ModReference;</replace>
+      <replace>ModReference</replace>
+      <replace>org.lwjgl.util.vector.Vector3f</replace>
+      <replace>render</replace>
+      <replace>arsenalmod</replace>
+      <replace>setRotationPoint</replace>
+      <replace>ModReference.MOD_ID</replace>
+      <replace />
+      <replace>ArsenalMod</replace>
+      <replace>EnumChatFormatting</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>F:\Documents\GitHub\W44---Modular-Warfare-Mod\src\main\java</dir>
+      <dir>F:\Documents\GitHub\W44---Modular-Warfare-Mod\run\ArsenalMod\Warfare44</dir>
+      <dir>C:\Users\maxsa\.gradle\caches\minecraft\net\minecraftforge\forge\1.12.2-14.23.5.2807\snapshot\20171003\forgeSrc-1.12.2-14.23.5.2807.jar!\net</dir>
+      <dir>F:\Documents\GitHub\W44---Modular-Warfare-Mod\src\main\resources\assets\arsenalmod</dir>
+      <dir>F:\Documents\GitHub\W44---Modular-Warfare-Mod\run</dir>
+      <dir>F:\Documents\GitHub\W44---Modular-Warfare-Mod\src\main\java\net\arsenalnetwork\arsenalmod</dir>
+      <dir>F:\Documents\GitHub\Project-Z-Mod\src\main\java\net\arsenalnetwork\arsenalmod\common</dir>
+      <dir>F:\Documents\GitHub\Project-Z-Mod\src\main\java\com\modularwarfare\client\model</dir>
+      <dir>F:\Documents\GitHub\Project-Z-Mod\src\main\java\com\modularwarfare\client\model\w44</dir>
+      <dir>F:\Documents\GitHub\Project-Z-Mod\src\main\java\com\modularwarfare\client\model\w44\armor</dir>
+      <dir>F:\Documents\GitHub\Project-Z-Mod\run\ArsenalMod\Warfare44\assets\arsenalmod</dir>
+      <dir>F:\Documents\GitHub\Project-Z-Mod\src\main\java\net\arsenalnetwork\arsenalmod\client</dir>
+      <dir>F:\Documents\GitHub\Project-Z-Mod\libs\BlockFront-deobf.jar!\net\blockfront\mod\client</dir>
+      <dir>F:\Documents\GitHub\Project-Z-Mod\src\main\java\net\arsenalnetwork\arsenalmod\server</dir>
+      <dir>F:\Documents\GitHub\Project-Z-Mod\src\main\java\net\arsenalnetwork\arsenalmod</dir>
+      <dir>F:\UpdatedMods\WhatTheFlux-1.7.10\src\main\java\io\github\phantamanta44\wtflux</dir>
+      <dir>F:\UpdatedMods\AntiCheat-1.7.10\src\main\java\net\arsenalnetwork</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/model/entity/event/FposeEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/model/entity/event/HandingEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/model/entity/event/KnockEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/model/entity/event/HugEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/model/entity/event/NoEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/model/entity/event/PointEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/model/entity/event/SelfieEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/model/entity/event/WaveEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/model/entity/event/YesEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/model/entity/event/YposeEvent.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/NetworkHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/message/emote/MessageHug.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/message/emote/MessageFail.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/message/emote/MessageFpose.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/message/emote/MessageHanding.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/message/emote/MessageKnock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/message/emote/MessageNo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/message/emote/MessagePoint.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/message/emote/MessageSelfie.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/message/emote/MessageWave.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/message/emote/MessageYes.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/server/network/message/emote/MessageYpose.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/assets/arsenalmod/lang/en_us.lang" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/model/entity/NeoEntityPlayerModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/common/CommonProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/ClientProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/arsenalmod/client/gui/GuiEvents.java" />
+        <option value="$PROJECT_DIR$/src/api/java/cofh/api/energy/IEnergyProvider.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phoenixx/configs/PhoenixxConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/PhoenixxMod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/handlers/AntiCheatHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/proxy/ServerProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/proxy/ClientProxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/client/player/fake/FakePlayerRendering.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/client/gui/ArsenalMainMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/client/gui/button/ArsenalButton.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/Copyright.txt" />
+        <option value="$PROJECT_DIR$/src/main/resources/mcmod.info" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/util/MD5Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/client/handlers/AntiCheatHandler.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/packets/AntiCheat_Packet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/configs/ArsenalServerConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/client/handlers/TickHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/ArsenalMod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phoenixx/util/MD5Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phoenixx/PhoenixxMod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/net/arsenalnetwork/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phoenixx/handlers/TickHandler.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phoenixx/packets/AntiCheat_Packet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/phoenixx/handlers/AntiCheatHandler.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-2106" />
+    <option name="y" value="-7" />
+    <option name="width" value="1936" />
+    <option name="height" value="1066" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AntiCheat-1.7.10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AntiCheat-1.7.10" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AntiCheat-1.7.10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AntiCheat-1.7.10" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AntiCheat-1.7.10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AntiCheat-1.7.10" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="AntiCheat-1.7.10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AntiCheat-1.7.10" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AntiCheat-1.7.10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AntiCheat-1.7.10" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="phoenixx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AntiCheat-1.7.10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AntiCheat-1.7.10" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="phoenixx" type="462c0819:PsiDirectoryNode" />
+              <item name="handlers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AntiCheat-1.7.10" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AntiCheat-1.7.10" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="phoenixx" type="462c0819:PsiDirectoryNode" />
+              <item name="packets" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="F:/Documents/GitHub/Project-Z-Mod" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Documents\GitHub\Project-Z-Mod\src\main\java\net\arsenalnetwork\arsenalmod\client\model\entity\event" />
+      <recent name="F:\Documents\GitHub\Project-Z-Mod\src\main\java\net\arsenalnetwork\arsenalmod\client\gui\util\ping" />
+      <recent name="F:\Documents\GitHub\Project-Z-Mod\src\main\java\net\arsenalnetwork\arsenalmod\client\gui\util" />
+      <recent name="F:\Documents\GitHub\Project-Z-Mod\libs" />
+      <recent name="F:\Documents\GitHub\Project-Z-Mod\src\main\resources\assets\arsenalmod\models\item" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="net.arsenalnetwork.arsenalmod.common.entity" />
+      <recent name="net.arsenalnetwork.arsenalmod.client.gui" />
+      <recent name="net.arsenalnetwork.arsenalmod.server.network.packet" />
+      <recent name="net.arsenalnetwork.arsenalmod.client.model" />
+      <recent name="net.arsenalnetwork.arsenalmod.client.gui.updating" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\UpdatedMods\AntiCheat-1.7.10\src\main\java\net\arsenalnetwork" />
+      <recent name="F:\Documents\GitHub\Project-Z-Mod\src\main\java" />
+      <recent name="F:\Documents\GitHub\W44---Modular-Warfare-Mod\run\ArsenalMod\Warfare44\assets\arsenalmod\skins\hd\armor" />
+      <recent name="F:\Documents\GitHub\W44---Modular-Warfare-Mod\run\ArsenalMod\Warfare44\assets\arsenalmod\textures\items" />
+      <recent name="F:\Documents\GitHub\W44---Modular-Warfare-Mod\run\ArsenalMod\officialmw\assets\arsenalmod" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Gradle.AntiCheat-1.7.10 [runServer]">
+    <configuration name="Minecraft Client" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="GradleStart" />
+      <module name="net.arsenalnetwork.AntiCheat-1.7.10.main" />
+      <option name="PROGRAM_PARAMETERS" value="--username maxsaleh2003@gmail.com --password Himan11223_" />
+      <option name="INPUT_FILE" value="$PROJECT_DIR$/ProjectZ_Client.launch" />
+      <shortenClasspath name="CLASSPATH_FILE" />
+      <option name="ENABLE_SWING_INSPECTOR" value="true" />
+      <option name="VM_PARAMETERS" value="-DFORGE_FORCE_FRAME_RECALC=true -Xms528m -Xmx1512m" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="MakeProject" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Minecraft Server" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="GradleStartServer" />
+      <module name="net.arsenalnetwork.arsenalmod.Project-Z-Mod.main" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/run" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AntiCheat-1.7.10 [runServer]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runServer" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="Project-Z-Mod [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="W44---Modular-Warfare-Mod [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="W44---Modular-Warfare-Mod [setupDecompWorkspace]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="setupDecompWorkspace" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.Minecraft Client" />
+      <item itemvalue="Application.Minecraft Server" />
+      <item itemvalue="Gradle.W44---Modular-Warfare-Mod [setupDecompWorkspace]" />
+      <item itemvalue="Gradle.W44---Modular-Warfare-Mod [build]" />
+      <item itemvalue="Gradle.Project-Z-Mod [runClient]" />
+      <item itemvalue="Gradle.AntiCheat-1.7.10 [runServer]" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.AntiCheat-1.7.10 [runServer]" />
+        <item itemvalue="Gradle.Project-Z-Mod [runClient]" />
+        <item itemvalue="Gradle.W44---Modular-Warfare-Mod [build]" />
+        <item itemvalue="Gradle.W44---Modular-Warfare-Mod [setupDecompWorkspace]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9c195f8c-1406-4f3c-a07d-2a47fdc86fc8" name="Default Changelist" comment="" />
+      <created>1556935126886</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556935126886</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1928" y="-7" width="1936" height="1066" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2260128" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.30653805" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38370848" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50159913" side_tool="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.4989339" weight="0.2454448" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32583067" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32995737" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2595949" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3279743" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49840087" weight="0.30653805" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.38370848" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3290461" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50159913" side_tool="true" weight="0.3290461" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Build" order="10" sideWeight="0.4989339" weight="0.2454448" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32583067" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.32995737" />
+      <window_info anchor="right" id="Gradle" order="5" weight="0.32995737" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout-to-restore>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/AppData/Local/Temp/Rar$DIa15844.48832/ModelAmericanBoots.class</url>
+          <line>10</line>
+          <properties />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1448-1.7.10/forgeSrc-1.7.10-10.13.4.1448-1.7.10-sources.jar!/net/minecraft/util/StatCollector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/wtflux/util/INBTSerializable.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1448-1.7.10/forgeSrc-1.7.10-10.13.4.1448-1.7.10-sources.jar!/net/minecraft/item/ItemStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="38" column="1" selection-start-line="38" selection-start-column="1" selection-end-line="38" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/wtflux/util/MathUtil.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/wtflux/util/MachineOverloadException.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1448-1.7.10/forgeSrc-1.7.10-10.13.4.1448-1.7.10-sources.jar!/net/minecraft/tileentity/TileEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="37" column="15" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="15" />
+          <folding>
+            <element signature="e#6393#6394#0" expanded="true" />
+            <element signature="e#6420#6421#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/wtflux/block/WtfBlocks.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/wtflux/lib/LibNBT.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/wtflux/item/WtfItems.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/wtflux/item/ItemMod.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/wtflux/item/ItemModSubs.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/io/github/phantamanta44/wtflux/item/ItemReactor.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa22448.21737/PhoenixxMod.class" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/proxy/ServerProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="27" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/client/tet.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1448-1.7.10/forgeSrc-1.7.10-10.13.4.1448-1.7.10-sources.jar!/net/minecraft/util/Session.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="60" column="23" selection-start-line="60" selection-start-column="23" selection-end-line="60" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/client/player/fake/FakePlayerRendering.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/client/gui/ArsenalMainMenu.java" />
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1448-1.7.10/forgeSrc-1.7.10-10.13.4.1448-1.7.10-sources.jar!/net/minecraft/client/gui/GuiButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1802">
+          <caret line="113" column="19" selection-start-line="113" selection-start-column="19" selection-end-line="113" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/client/gui/button/ArsenalButton.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mcmod.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="30" selection-start-line="21" selection-start-column="20" selection-end-line="21" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/proxy/ClientProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/proxy/CommonProxy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa26212.48025/AntiCheat_Packet$Handler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa26212.46443/AntiCheat_Packet.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="74" column="5" lean-forward="true" selection-start-line="43" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#2385#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa5352.9446/AntiCheat_Packet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="548">
+          <caret line="155" column="5" lean-forward="true" selection-start-line="113" selection-start-column="1" selection-end-line="155" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/Copyright.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="46" selection-start-column="46" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/util/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="29" column="52" selection-start-line="29" selection-start-column="52" selection-end-line="29" selection-end-column="52" />
+          <folding>
+            <element signature="e#1197#1198#0" expanded="true" />
+            <element signature="e#1233#1234#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/packets/AntiCheat_Packet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="117" column="73" selection-start-line="117" selection-start-column="73" selection-end-line="117" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DIa20628.26862/PhoenixxServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1377" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/configs/ArsenalServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="129" column="30" selection-start-line="129" selection-start-column="30" selection-end-line="129" selection-end-column="30" />
+          <folding>
+            <element signature="e#1014#1022#0" expanded="true" />
+            <element signature="e#1298#1306#0" expanded="true" />
+            <element signature="e#4107#4108#0" expanded="true" />
+            <element signature="e#4151#4152#0" expanded="true" />
+            <element signature="e#4215#4216#0" expanded="true" />
+            <element signature="e#4253#4254#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/configs/ArsenalConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="709">
+          <caret line="55" column="31" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/client/handlers/TickHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="43" column="102" selection-start-line="43" selection-start-column="102" selection-end-line="43" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/client/handlers/AntiCheatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="19" column="64" selection-start-line="19" selection-start-column="34" selection-end-line="19" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/ArsenalMod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+          <folding>
+            <element signature="e#5519#5552#0" expanded="true" />
+            <element signature="e#7680#7696#0" expanded="true" />
+            <element signature="e#8029#8030#0" expanded="true" />
+            <element signature="e#8060#8061#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixx/util/MD5Util.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="18" column="48" selection-start-line="18" selection-start-column="48" selection-end-line="18" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1448-1.7.10/forgeSrc-1.7.10-10.13.4.1448-1.7.10-sources.jar!/cpw/mods/fml/common/ModContainer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="68" column="16" selection-start-line="68" selection-start-column="16" selection-end-line="68" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/arsenalnetwork/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixx/PhoenixxMod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="81" column="49" selection-start-line="81" selection-start-column="49" selection-end-line="81" selection-end-column="49" />
+          <folding>
+            <element signature="e#4038#4071#0" expanded="true" />
+            <element signature="e#6173#6189#0" expanded="true" />
+            <element signature="e#6381#6382#0" expanded="true" />
+            <element signature="e#6412#6413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixx/handlers/TickHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="43" column="98" selection-start-line="43" selection-start-column="98" selection-end-line="43" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/minecraft/net/minecraftforge/forge/1.7.10-10.13.4.1448-1.7.10/forgeSrc-1.7.10-10.13.4.1448-1.7.10-sources.jar!/cpw/mods/fml/common/network/FMLNetworkEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="123" column="24" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cat73/antianticheat/network/PacketLister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cat73/antianticheat/bukkit/pack/ModsPack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cat73/antianticheat/bukkit/handle/AntiCheatHandle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding>
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#470#471#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cat73/antianticheat/bukkit/pack/ModPackImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/cat73/antianticheat/AntiAntiCheat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="58" column="25" selection-start-line="58" selection-start-column="25" selection-end-line="58" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixx/configs/PhoenixxServerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="28" column="47" selection-start-line="28" selection-start-column="47" selection-end-line="28" selection-end-column="47" />
+          <folding>
+            <element signature="e#1003#1011#0" expanded="true" />
+            <element signature="e#4208#4209#0" expanded="true" />
+            <element signature="e#4246#4247#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixx/packets/AntiCheat_Packet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1735">
+          <caret line="140" column="64" selection-start-line="140" selection-start-column="64" selection-end-line="140" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/phoenixx/handlers/AntiCheatHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="25" column="42" lean-forward="true" selection-start-line="25" selection-start-column="42" selection-end-line="25" selection-end-column="42" />
+          <folding>
+            <element signature="e#473#481#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>net.arsenalnetwork.arsenalmod.Project-Z-Mod</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Gradle: ca.weblite:java-objc-bridge:1.0.0</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

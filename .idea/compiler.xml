@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="com.modularwarfare.W44---Modular-Warfare-Mod.api" target="1.8" />
+      <module name="com.modularwarfare.W44---Modular-Warfare-Mod.main" target="1.8" />
+      <module name="com.modularwarfare.W44---Modular-Warfare-Mod.test" target="1.8" />
+      <module name="com.yourname.ar.Project-Z-Mod.api" target="1.8" />
+      <module name="com.yourname.ar.Project-Z-Mod.main" target="1.8" />
+      <module name="com.yourname.ar.Project-Z-Mod.test" target="1.8" />
+      <module name="io.github.phantamanta44.wtflux.AntiCheat-1.7.10.api" target="1.8" />
+      <module name="io.github.phantamanta44.wtflux.AntiCheat-1.7.10.main" target="1.8" />
+      <module name="io.github.phantamanta44.wtflux.AntiCheat-1.7.10.test" target="1.8" />
+      <module name="io.github.phantamanta44.wtflux.WhatTheFlux-1.7.10.api" target="1.8" />
+      <module name="io.github.phantamanta44.wtflux.WhatTheFlux-1.7.10.main" target="1.8" />
+      <module name="io.github.phantamanta44.wtflux.WhatTheFlux-1.7.10.test" target="1.8" />
+      <module name="net.arsenalnetwork.AntiCheat-1.7.10.api" target="1.8" />
+      <module name="net.arsenalnetwork.AntiCheat-1.7.10.main" target="1.8" />
+      <module name="net.arsenalnetwork.AntiCheat-1.7.10.test" target="1.8" />
+      <module name="net.arsenalnetwork.arsenalmod.Project-Z-Mod.api" target="1.8" />
+      <module name="net.arsenalnetwork.arsenalmod.Project-Z-Mod.main" target="1.8" />
+      <module name="net.arsenalnetwork.arsenalmod.Project-Z-Mod.test" target="1.8" />
+      <module name="net.arsenalnetwork.arsenalmod.W44---Modular-Warfare-Mod.api" target="1.8" />
+      <module name="net.arsenalnetwork.arsenalmod.W44---Modular-Warfare-Mod.main" target="1.8" />
+      <module name="net.arsenalnetwork.arsenalmod.W44---Modular-Warfare-Mod.test" target="1.8" />
+      <module name="net.buycraft.Project-Z-Mod.main" target="1.8" />
+      <module name="net.buycraft.Project-Z-Mod.test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
