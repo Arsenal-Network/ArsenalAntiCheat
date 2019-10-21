@@ -1,2 +1,2 @@
-# ArsenalAntiCheat
- This is an anti cheat mod for Arsenal Network
+# WatchDog Anti Cheat
+ This is a anti cheat mod and was made for Arsenal Network & is ready to be used publicly.
