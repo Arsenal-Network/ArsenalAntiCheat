@@ -5,6 +5,9 @@ bin
 .metadata
 .classpath
 .project
+*.idea
+.idea
+eclipse
 
 # idea
 out

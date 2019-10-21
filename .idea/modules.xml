@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.ArsenalAntiCheat.iml" filepath="$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.ArsenalAntiCheat.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.ArsenalAntiCheat.api.iml" filepath="$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.ArsenalAntiCheat.api.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.ArsenalAntiCheat.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.ArsenalAntiCheat.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.ArsenalAntiCheat.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.ArsenalAntiCheat.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.anticheat.ArsenalAntiCheat.iml" filepath="$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.anticheat.ArsenalAntiCheat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.anticheat.ArsenalAntiCheat.api.iml" filepath="$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.anticheat.ArsenalAntiCheat.api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.anticheat.ArsenalAntiCheat.main.iml" filepath="$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.anticheat.ArsenalAntiCheat.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.anticheat.ArsenalAntiCheat.test.iml" filepath="$PROJECT_DIR$/.idea/modules/net.arsenalnetwork.anticheat.ArsenalAntiCheat.test.iml" />
     </modules>
   </component>
 </project>
