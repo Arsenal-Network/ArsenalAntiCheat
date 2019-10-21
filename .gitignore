@@ -7,7 +7,7 @@ bin
 .project
 *.idea
 .idea
-eclipse
+eclipse/
 
 # idea
 out
