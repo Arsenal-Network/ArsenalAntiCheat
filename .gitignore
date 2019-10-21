@@ -8,6 +8,8 @@ bin
 *.idea
 .idea
 eclipse/
+.idea/
+.gradle/
 
 # idea
 out
