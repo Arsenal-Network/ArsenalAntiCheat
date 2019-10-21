@@ -68,8 +68,7 @@ public class AntiCheat {
         logger.info("[MaxIsH0t] Pssttt....I like easter eggs, don't you?");
         logger.info("[MaxIsH0t] Contact me on discord at Phoenix#5518 or on twitter @Golden4Phoenix, if any issues occur :)");
 
-        if (side.isClient())
-        {
+        if (side.isClient()) {
             clientSide();
 
             System.out.println(AntiCheatHandler.getModIDs());
@@ -78,32 +77,29 @@ public class AntiCheat {
     }
 
     @Mod.EventHandler
-    public void serverStart(FMLServerStartingEvent event)
-    {
+    public void serverStart(FMLServerStartingEvent event) {
+
         System.out.println( AntiCheat.MODNAME + " | Server Started");
     }
 
     @Mod.EventHandler
-    public void postInit(FMLPostInitializationEvent e)
-    {
-        proxy.postInit(e);
+    public void postInit(FMLPostInitializationEvent e) {
 
+        proxy.postInit(e);
     }
 
     @SideOnly(Side.CLIENT)
-    private void clientSide()
-    {
+    private void clientSide() {
+
         File configDirectory = new File(Loader.instance().getConfigDir(), "/WatchDog/");
         String loader = FMLCommonHandler.instance().getModName();
 
-        if ((loader.contains("lite")) || (loader.contains("liteloader")))
-        {
+        if ((loader.contains("lite")) || (loader.contains("liteloader"))) {
             System.out.println("[" + ANTICHEATNAME + " Anti-Cheat] Detected Lite-Loader | Shutting down...");
             FMLCommonHandler.instance().exitJava(0,true);
         }
 
-        if(!configDirectory.exists())
-        {
+        if(!configDirectory.exists()) {
             configDirectory.mkdir();
             System.out.println(ANTICHEATNAME+" Anti-Cheat Config directory does not exist! Creating one now.");
         }

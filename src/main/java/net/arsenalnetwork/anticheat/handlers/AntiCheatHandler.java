@@ -12,34 +12,31 @@ public class AntiCheatHandler
 {
     private static Minecraft mc = Minecraft.getMinecraft();
 
-    public static String getModIDs()
-    {
+    public static String getModIDs() {
+
         ArrayList<String> modIDs = new ArrayList<String>();
         List<ModContainer> mods = Loader.instance().getModList();
 
-        for(ModContainer mod : mods)
-        {
+        for(ModContainer mod : mods) {
             String name = mod.getName();
             String modID = mod.getModId();
             modIDs.add(modID);
-            if(PhoenixxConfig.debugClient)
-            {
+            if(PhoenixxConfig.debugClient) {
                 PhoenixxConfig.addToModList(name, modID);
             }
         }
         //modIDs.add("Cheating-Essentials");
         String allModsIDsToString = String.join(",", modIDs);
 
-        if(PhoenixxConfig.debugClient)
-        {
+        if(PhoenixxConfig.debugClient) {
             PhoenixxConfig.addEntireListToModFile(allModsIDsToString);
         }
 
         return allModsIDsToString;
     }
 
-    public static String getTexturePacks()
-    {
+    public static String getTexturePacks() {
+
         if(!mc.gameSettings.resourcePacks.isEmpty())
         {
             ArrayList<String> texturePacks = new ArrayList<String>();
@@ -47,12 +44,12 @@ public class AntiCheatHandler
 
             String allModsIDsToString = String.join(",", texturePacks);
 
-            if(PhoenixxConfig.debugClient)
-            {
+            if(PhoenixxConfig.debugClient) {
                 PhoenixxConfig.addEntireListToModFile(allModsIDsToString);
             }
             return allModsIDsToString;
         }
+
         return "NONE";
     }
 }

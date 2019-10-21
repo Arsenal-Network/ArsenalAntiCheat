@@ -31,8 +31,8 @@ public class PhoenixxServerConfig
     private static String encodedModWhitelistPlayers = "null";
     private static ArrayList<String> modWhitelistedPlayers = new ArrayList<String>();
 
-    public PhoenixxServerConfig()
-    {
+    public PhoenixxServerConfig() {
+
         Side side = FMLCommonHandler.instance().getEffectiveSide();
         if (side.isClient()) {
             return;
@@ -40,8 +40,8 @@ public class PhoenixxServerConfig
         reloadConfig();
     }
 
-    public static void reloadConfig()
-    {
+    public static void reloadConfig() {
+
         loadConfig();
         loadExtraFiles();
         useAntiCheat = (Boolean) PhoenixxConfig.loadProp(serverProps, useAntiCheat, Boolean.TRUE, "useAntiCheat");
@@ -60,8 +60,8 @@ public class PhoenixxServerConfig
         saveConfig();
     }
 
-    private static void loadExtraFiles()
-    {
+    private static void loadExtraFiles() {
+
         if(playerCheatingFile.exists()) {
             System.out.println("Successfully loaded player cheating file");
         } else {
@@ -79,18 +79,16 @@ public class PhoenixxServerConfig
         PhoenixxConfig.loadConfig(configDirectory, configFile, serverProps);
     }
 
-    private static void saveConfig()
-    {
+    private static void saveConfig() {
+
         PhoenixxConfig.saveConfig(configDirectory, configFile, serverProps, "~" + AntiCheat.ANTICHEATNAME + " Anti-Cheat Server Setup~");
     }
 
     /** Add person to cheater list */
-    public static void addToCheaterList(String playerData)
-    {
-        if(playerCheatingFile != null)
-        {
-            try
-            {
+    public static void addToCheaterList(String playerData) {
+
+        if(playerCheatingFile != null) {
+            try {
                 SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
                 Date date = new Date();
                 String timeNow = formatter.format(date);
@@ -116,42 +114,37 @@ public class PhoenixxServerConfig
         return modWhitelistedPlayers;
     }
 
-    public static ArrayList<String> getWhitelistedMods()
-    {
+    public static ArrayList<String> getWhitelistedMods() {
+
         return whitelistedMods;
     }
 
-    private static void loadArrayData(String[] data, ArrayList<String> arrayList)
-    {
+    private static void loadArrayData(String[] data, ArrayList<String> arrayList) {
+
         arrayList.clear();
-        if(data != null)
-        {
-            for(String d : data)
-            {
+        if(data != null) {
+            for(String d : data) {
                 arrayList.add(d);
             }
         }
     }
 
-    public static String[] decodeData(String loc, String splitby)
-    {
-        if(loc.equals("null"))
-        {
+    public static String[] decodeData(String loc, String splitby) {
+
+        if(loc.equals("null")) {
             return null;
         }
 
         String[] data;
 
-        if(splitby == null)
-        {
+        if(splitby == null) {
             data = loc.split("\\|");
             return data;
-        }else{
+        }else {
             data = loc.split("\\"+splitby);
         }
 
-        if(!loc.contains(splitby))
-        {
+        if(!loc.contains(splitby)) {
             data = new String[1];
             data[0] = loc;
         }

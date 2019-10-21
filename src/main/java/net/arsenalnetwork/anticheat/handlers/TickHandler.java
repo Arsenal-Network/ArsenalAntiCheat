@@ -21,8 +21,8 @@ public class TickHandler {
 
     public static boolean hasSentModsList = false;
 
-    public TickHandler()
-    {
+    public TickHandler() {
+
         Side side = FMLCommonHandler.instance().getEffectiveSide();
         if (side.isClient()) {
             this.mc = FMLClientHandler.instance().getClient();
@@ -31,22 +31,20 @@ public class TickHandler {
 
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
-    public void clientTick(TickEvent.ClientTickEvent event)
-    {
-        if(mc.theWorld == null)
-        {
+    public void clientTick(TickEvent.ClientTickEvent event) {
+
+        if(mc.theWorld == null) {
             hasSentModsList = false;
         }
 
-        if(!hasSentModsList && mc.theWorld != null && mc.getIntegratedServer() == null && !mc.isSingleplayer())
-        {
+        if(!hasSentModsList && mc.theWorld != null && mc.getIntegratedServer() == null && !mc.isSingleplayer()) {
             //System.out.println("SENDING ANTI-CHEAT PACKET");
             AntiCheat.INSTANCE.sendToServer(new AntiCheat_Packet(0, AntiCheatHandler.getModIDs()));
             AntiCheat.INSTANCE.sendToServer(new AntiCheat_Packet(1, AntiCheatHandler.getTexturePacks()));
             hasSentModsList = true;
         }
-        if(mc.isSingleplayer())
-        {
+
+        if(mc.isSingleplayer()) {
             System.out.println(AntiCheatHandler.getTexturePacks());
         }
     }

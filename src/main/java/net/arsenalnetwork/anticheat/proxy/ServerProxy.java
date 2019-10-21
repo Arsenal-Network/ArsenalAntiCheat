@@ -5,9 +5,6 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 
-/**
- * Created by Phoenixx on 12/06/2018
- */
 public class ServerProxy extends CommonProxy
 {
     public static PhoenixxServerConfig phoenixxServerConfig;

@@ -20,8 +20,8 @@ public class PhoenixxConfig
 
     private static String defComment = "~" + AntiCheat.ANTICHEATNAME + "-AntiCheat Client Configuration File~";
 
-    public PhoenixxConfig()
-    {
+    public PhoenixxConfig() {
+
         loadConfig(configDirectory, configFile, clientProps);
         loadExtraFiles();
 
@@ -30,8 +30,8 @@ public class PhoenixxConfig
         saveConfig(configDirectory, configFile, clientProps, defComment);
     }
 
-    private static void loadExtraFiles()
-    {
+    private static void loadExtraFiles() {
+
         if(allLoadedMods.exists()) {
             //System.out.println("Successfully loaded player cheating file");
             PrintWriter writer = null;
@@ -53,12 +53,10 @@ public class PhoenixxConfig
     }
 
     /** Add all loaded mods to file */
-    public static void addToModList(String modName, String modID)
-    {
-        if(allLoadedMods != null)
-        {
-            try
-            {
+    public static void addToModList(String modName, String modID) {
+
+        if(allLoadedMods != null) {
+            try {
                 FileWriter fw = new FileWriter(allLoadedMods,true);
                 BufferedWriter bw = new BufferedWriter(fw);
                 PrintWriter pw = new PrintWriter(bw);
@@ -75,12 +73,10 @@ public class PhoenixxConfig
     }
 
     /** Add whole loaded list to file */
-    public static void addEntireListToModFile(String allMods)
-    {
-        if(allLoadedMods != null)
-        {
-            try
-            {
+    public static void addEntireListToModFile(String allMods) {
+
+        if(allLoadedMods != null) {
+            try {
                 FileWriter fw = new FileWriter(allLoadedMods,true);
                 BufferedWriter bw = new BufferedWriter(fw);
                 PrintWriter pw = new PrintWriter(bw);
@@ -98,10 +94,9 @@ public class PhoenixxConfig
         }
     }
 
-    public static Object loadProp(Properties p, Object o, Object def, String pname)
-    {
-        if (p.containsKey(pname))
-        {
+    public static Object loadProp(Properties p, Object o, Object def, String pname) {
+
+        if (p.containsKey(pname)) {
             o = parseObject(o, p.getProperty(pname));
             System.out.println("Loaded config property '" + pname + "' = " + o);
             return o;
@@ -111,8 +106,8 @@ public class PhoenixxConfig
         return def;
     }
 
-    private static String toStringObject(Object o)
-    {
+    private static String toStringObject(Object o) {
+
         if ((o instanceof Boolean)) {
             return ((Boolean)o).toString();
         }
@@ -128,69 +123,57 @@ public class PhoenixxConfig
         return "";
     }
 
-    private static Object parseObject(Object o, String property)
-    {
-        if(o instanceof Boolean)
-        {
+    private static Object parseObject(Object o, String property) {
+
+        if(o instanceof Boolean) {
             return Boolean.parseBoolean(property);
         }
 
-        if(o instanceof String)
-        {
+        if(o instanceof String) {
             return property;
         }
 
-        if(o instanceof Integer)
-        {
+        if(o instanceof Integer) {
             return Integer.parseInt(property);
         }
 
-        if(o instanceof Float)
-        {
+        if(o instanceof Float) {
             return Float.parseFloat(property);
         }
 
         return "";
     }
 
-    public static void loadConfig(File dir, File file, Properties prop)
-    {
-        try
-        {
+    public static void loadConfig(File dir, File file, Properties prop) {
+
+        try {
             dir.mkdir();
             if ((!file.exists()) && (!file.createNewFile())) {
                 return;
             }
-            if (file.canRead())
-            {
+            if (file.canRead()) {
                 FileInputStream fileinputstream = new FileInputStream(file);
                 prop.load(fileinputstream);
                 fileinputstream.close();
             }
-        }
-        catch (IOException ex)
-        {
+        } catch (IOException ex) {
             System.out.println("Could not load "+ AntiCheat.ANTICHEATNAME+"-AntiCheat Config file.");
         }
     }
 
-    public static void saveConfig(File dir, File file, Properties prop, String comment)
-    {
-        try
-        {
+    public static void saveConfig(File dir, File file, Properties prop, String comment) {
+
+        try {
             dir.mkdir();
             if ((!file.exists()) && (!file.createNewFile())) {
                 return;
             }
-            if (file.canWrite())
-            {
+            if (file.canWrite()) {
                 FileOutputStream fileoutputstream = new FileOutputStream(file);
                 prop.store(fileoutputstream, comment);
                 fileoutputstream.close();
             }
-        }
-        catch (IOException ex)
-        {
+        } catch (IOException ex) {
             System.out.println("Could not save "+ AntiCheat.ANTICHEATNAME+"-AntiCheat Config file.");
         }
     }
