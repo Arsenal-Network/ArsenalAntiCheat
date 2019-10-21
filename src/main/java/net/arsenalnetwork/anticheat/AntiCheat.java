@@ -24,31 +24,29 @@ import java.util.logging.Logger;
 @Mod(modid = AntiCheat.MODID, name = AntiCheat.MODNAME, version = AntiCheat.VERSION)
 public class AntiCheat {
 
-    public static final String MODID = "watchdog";
-    public static final String MODNAME = "WatchDog Anti-Cheat";
-    public static final String VERSION = "1.7.10 - 1.0.0";
-
+    public static final String MODID         = "watchdog";
+    public static final String MODNAME       = "WatchDog Anti-Cheat";
+    public static final String VERSION       = "1.7.10 - 1.0.0";
     public static final String ANTICHEATNAME = "WatchDog Anti-Cheat";
-    public static final String ANTICHEAT_SHORTNAME = "WAC";
 
     private static Logger logger;
-
     private static TickHandler tickHandler;
 
     @Mod.Instance(MODID)
     public static AntiCheat instance;
 
-    @SidedProxy(clientSide="net.arsenalnetwork.anitcheat.proxy.ClientProxy", serverSide="net.arsenalnetwork.anitcheat.proxy.ServerProxy")
+    @SidedProxy(clientSide="net.arsenalnetwork.anticheat.proxy.ClientProxy", serverSide="net.arsenalnetwork.anticheat.proxy.ServerProxy")
     public static CommonProxy proxy;
 
-    public static final SimpleNetworkWrapper INSTANCE = NetworkRegistry.INSTANCE.newSimpleChannel("phoenixx");
+    public static final SimpleNetworkWrapper INSTANCE = NetworkRegistry.INSTANCE.newSimpleChannel("watchdog");
 
     @Mod.EventHandler
     public void preInit(FMLPreInitializationEvent e) {
         proxy.preInit(e);
-        // Register packets
 
+        // Register packets
         INSTANCE.registerMessage(AntiCheat_Packet.Handler.class, AntiCheat_Packet.class, 0, Side.SERVER);
+
         System.out.println("Packets initialized");
     }
 
@@ -66,36 +64,31 @@ public class AntiCheat {
 
         logger = Logger.getLogger("WatchDog");
         logger.info("[MaxIsH0t] Pssttt....I like easter eggs, don't you?");
-        logger.info("[MaxIsH0t] Contact me on discord at Phoenix#5518 or on twitter @Golden4Phoenix, if any issues occur :)");
+        logger.info("[MaxIsH0t] Contact me on discord at MaxIsHot#0001 or on twitter @Golden4Phoenix, if any issues occur :)");
 
         if (side.isClient()) {
             clientSide();
-
-            System.out.println(AntiCheatHandler.getModIDs());
-            System.out.println(AntiCheatHandler.getTexturePacks());
+            System.out.println(AntiCheatHandler.getModMD5s());
         }
     }
 
     @Mod.EventHandler
     public void serverStart(FMLServerStartingEvent event) {
-
         System.out.println( AntiCheat.MODNAME + " | Server Started");
     }
 
     @Mod.EventHandler
     public void postInit(FMLPostInitializationEvent e) {
-
         proxy.postInit(e);
     }
 
     @SideOnly(Side.CLIENT)
     private void clientSide() {
-
         File configDirectory = new File(Loader.instance().getConfigDir(), "/WatchDog/");
         String loader = FMLCommonHandler.instance().getModName();
 
         if ((loader.contains("lite")) || (loader.contains("liteloader"))) {
-            System.out.println("[" + ANTICHEATNAME + " Anti-Cheat] Detected Lite-Loader | Shutting down...");
+            System.out.println("[" + ANTICHEATNAME + " Detected Lite-Loader | Shutting down...");
             FMLCommonHandler.instance().exitJava(0,true);
         }
 

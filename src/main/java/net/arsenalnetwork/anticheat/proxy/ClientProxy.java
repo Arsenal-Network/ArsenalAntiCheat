@@ -1,6 +1,6 @@
 package net.arsenalnetwork.anticheat.proxy;
 
-import net.arsenalnetwork.anticheat.configs.PhoenixxConfig;
+import net.arsenalnetwork.anticheat.configs.WatchDogConfig;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
@@ -8,7 +8,7 @@ import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 public class ClientProxy extends CommonProxy
 {
 
-    public static PhoenixxConfig phoenixxConfig;
+    public static WatchDogConfig watchDogConfig;
 
     @Override
     public void preInit(FMLPreInitializationEvent e) {
@@ -18,7 +18,7 @@ public class ClientProxy extends CommonProxy
     @Override
     public void init(FMLInitializationEvent e) {
         super.init(e);
-        phoenixxConfig = new PhoenixxConfig();
+        watchDogConfig = new WatchDogConfig();
     }
 
     @Override

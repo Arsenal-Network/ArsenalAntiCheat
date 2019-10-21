@@ -11,19 +11,15 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Properties;
 
-/**
- * Created by Phoenixx on 12/06/2018
- */
-public class PhoenixxServerConfig
-{
-    private static final File configDirectory = new File(Loader.instance().getConfigDir(), "/PhoenixStudios");
-    private static final File configFile = new File(configDirectory, AntiCheat.ANTICHEATNAME+"-AntiCheat.cfg");
+public class WatchDogServerConfig {
+
+    private static final File configDirectory = new File(Loader.instance().getConfigDir(), "/WatchDog");
+    private static final File configFile = new File(configDirectory, AntiCheat.ANTICHEATNAME + "-Server.cfg");
     private static File playerCheatingFile = new File(configDirectory, "Player_CheatingFile.txt");
 
     private static final Properties serverProps = new Properties();
 
     public static boolean useAntiCheat;
-    public static boolean allowTexturePacks;
 
     public static String encodedWhitelistedMods = "null";
     private static ArrayList<String> whitelistedMods = new ArrayList<String>();
@@ -31,8 +27,7 @@ public class PhoenixxServerConfig
     private static String encodedModWhitelistPlayers = "null";
     private static ArrayList<String> modWhitelistedPlayers = new ArrayList<String>();
 
-    public PhoenixxServerConfig() {
-
+    public WatchDogServerConfig() {
         Side side = FMLCommonHandler.instance().getEffectiveSide();
         if (side.isClient()) {
             return;
@@ -41,19 +36,17 @@ public class PhoenixxServerConfig
     }
 
     public static void reloadConfig() {
-
         loadConfig();
         loadExtraFiles();
-        useAntiCheat = (Boolean) PhoenixxConfig.loadProp(serverProps, useAntiCheat, Boolean.TRUE, "useAntiCheat");
-        allowTexturePacks = (Boolean) PhoenixxConfig.loadProp(serverProps, allowTexturePacks, Boolean.FALSE, "allowTexturePacks");
+        useAntiCheat = (Boolean) WatchDogConfig.loadProp(serverProps, useAntiCheat, Boolean.TRUE, "useAntiCheat");
 
         /** Whitelisted mods **/
-        encodedWhitelistedMods = (String)PhoenixxConfig.loadProp(serverProps, encodedWhitelistedMods,"mcp,FML,Forge,"+ AntiCheat.MODID,"whitelistMods");
+        encodedWhitelistedMods = (String) WatchDogConfig.loadProp(serverProps, encodedWhitelistedMods,"","whitelistModsMD5");
         String[] decodedModWhitelist = decodeData(encodedWhitelistedMods,",");
         loadArrayData(decodedModWhitelist, whitelistedMods);
 
         /** Whitelisted players for anti-cheat **/
-        encodedModWhitelistPlayers = (String)PhoenixxConfig.loadProp(serverProps, encodedWhitelistedMods,"Phoenixx, TestUser","modWhitelistPlayers");
+        encodedModWhitelistPlayers = (String) WatchDogConfig.loadProp(serverProps, encodedWhitelistedMods,"MaxIsH0t, TestUser","modWhitelistPlayers");
         String[] decodedModWhitelistPlayers = decodeData(encodedModWhitelistPlayers,",");
         loadArrayData(decodedModWhitelistPlayers, modWhitelistedPlayers);
 
@@ -61,7 +54,6 @@ public class PhoenixxServerConfig
     }
 
     private static void loadExtraFiles() {
-
         if(playerCheatingFile.exists()) {
             System.out.println("Successfully loaded player cheating file");
         } else {
@@ -76,17 +68,15 @@ public class PhoenixxServerConfig
 
     private static void loadConfig()
     {
-        PhoenixxConfig.loadConfig(configDirectory, configFile, serverProps);
+        WatchDogConfig.loadConfig(configDirectory, configFile, serverProps);
     }
 
     private static void saveConfig() {
-
-        PhoenixxConfig.saveConfig(configDirectory, configFile, serverProps, "~" + AntiCheat.ANTICHEATNAME + " Anti-Cheat Server Setup~");
+        WatchDogConfig.saveConfig(configDirectory, configFile, serverProps, "~" + AntiCheat.ANTICHEATNAME + " Anti-Cheat Server Setup~");
     }
 
     /** Add person to cheater list */
     public static void addToCheaterList(String playerData) {
-
         if(playerCheatingFile != null) {
             try {
                 SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -115,12 +105,10 @@ public class PhoenixxServerConfig
     }
 
     public static ArrayList<String> getWhitelistedMods() {
-
         return whitelistedMods;
     }
 
     private static void loadArrayData(String[] data, ArrayList<String> arrayList) {
-
         arrayList.clear();
         if(data != null) {
             for(String d : data) {
@@ -130,7 +118,6 @@ public class PhoenixxServerConfig
     }
 
     public static String[] decodeData(String loc, String splitby) {
-
         if(loc.equals("null")) {
             return null;
         }

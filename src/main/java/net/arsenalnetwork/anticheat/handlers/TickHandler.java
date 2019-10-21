@@ -10,10 +10,6 @@ import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.Minecraft;
 
-
-/**
- * Created by Phoenixx on 12/06/2018
- */
 public class TickHandler {
 
     @SideOnly(Side.CLIENT)
@@ -22,7 +18,6 @@ public class TickHandler {
     public static boolean hasSentModsList = false;
 
     public TickHandler() {
-
         Side side = FMLCommonHandler.instance().getEffectiveSide();
         if (side.isClient()) {
             this.mc = FMLClientHandler.instance().getClient();
@@ -32,20 +27,13 @@ public class TickHandler {
     @SubscribeEvent
     @SideOnly(Side.CLIENT)
     public void clientTick(TickEvent.ClientTickEvent event) {
-
         if(mc.theWorld == null) {
             hasSentModsList = false;
         }
 
         if(!hasSentModsList && mc.theWorld != null && mc.getIntegratedServer() == null && !mc.isSingleplayer()) {
-            //System.out.println("SENDING ANTI-CHEAT PACKET");
-            AntiCheat.INSTANCE.sendToServer(new AntiCheat_Packet(0, AntiCheatHandler.getModIDs()));
-            AntiCheat.INSTANCE.sendToServer(new AntiCheat_Packet(1, AntiCheatHandler.getTexturePacks()));
+            AntiCheat.INSTANCE.sendToServer(new AntiCheat_Packet(0, AntiCheatHandler.getModMD5s()));
             hasSentModsList = true;
-        }
-
-        if(mc.isSingleplayer()) {
-            System.out.println(AntiCheatHandler.getTexturePacks());
         }
     }
 }

@@ -6,34 +6,28 @@ import cpw.mods.fml.common.Loader;
 import java.io.*;
 import java.util.Properties;
 
-/**
- * Created by Phoenixx on 12/06/2018
- */
-public class PhoenixxConfig
-{
+public class WatchDogConfig {
+
     private static final Properties clientProps = new Properties();
-    private static final File configDirectory = new File(Loader.instance().getConfigDir(), "/PhoenixStudios/");
+    private static final File configDirectory = new File(Loader.instance().getConfigDir(), "/WatchDog/");
     private static final File configFile = new File(configDirectory, AntiCheat.ANTICHEATNAME+"-Client.cfg");
     private static File allLoadedMods = new File(configDirectory, "LoadedMods_FromLastStart.txt");
 
     public static boolean debugClient = false;
 
-    private static String defComment = "~" + AntiCheat.ANTICHEATNAME + "-AntiCheat Client Configuration File~";
+    private static String defComment = "~ " + AntiCheat.ANTICHEATNAME + " - Client Configuration File ~";
 
-    public PhoenixxConfig() {
-
+    public WatchDogConfig() {
         loadConfig(configDirectory, configFile, clientProps);
         loadExtraFiles();
 
-        debugClient = (Boolean) loadProp(clientProps, debugClient, Boolean.FALSE, "debugClient");
+        debugClient = (Boolean) loadProp(clientProps, debugClient, Boolean.FALSE, "OutputLoadedMods");
 
         saveConfig(configDirectory, configFile, clientProps, defComment);
     }
 
     private static void loadExtraFiles() {
-
         if(allLoadedMods.exists()) {
-            //System.out.println("Successfully loaded player cheating file");
             PrintWriter writer = null;
             try {
                 writer = new PrintWriter(allLoadedMods);
@@ -44,7 +38,6 @@ public class PhoenixxConfig
             writer.close();
         } else {
             try {
-                //System.out.println("Player cheating file not found! Creating a new one...");
                 allLoadedMods.createNewFile();
             } catch (IOException e) {
                 e.printStackTrace();
@@ -54,7 +47,6 @@ public class PhoenixxConfig
 
     /** Add all loaded mods to file */
     public static void addToModList(String modName, String modID) {
-
         if(allLoadedMods != null) {
             try {
                 FileWriter fw = new FileWriter(allLoadedMods,true);
@@ -74,7 +66,6 @@ public class PhoenixxConfig
 
     /** Add whole loaded list to file */
     public static void addEntireListToModFile(String allMods) {
-
         if(allLoadedMods != null) {
             try {
                 FileWriter fw = new FileWriter(allLoadedMods,true);
@@ -82,7 +73,7 @@ public class PhoenixxConfig
                 PrintWriter pw = new PrintWriter(bw);
 
                 pw.println("");
-                pw.println("COPY THIS ENTIRE LIST AND PASTE IT IN THE SERVER SIDE ANTI-CHEAT CONFIG:");
+                pw.println("COPY THIS ENTIRE LIST AND PASTE IT IN whitelistModsMD5 THE SERVER SIDE ANTI-CHEAT CONFIG:");
                 pw.println(allMods);
                 pw.close();
 
@@ -95,7 +86,6 @@ public class PhoenixxConfig
     }
 
     public static Object loadProp(Properties p, Object o, Object def, String pname) {
-
         if (p.containsKey(pname)) {
             o = parseObject(o, p.getProperty(pname));
             System.out.println("Loaded config property '" + pname + "' = " + o);
@@ -107,7 +97,6 @@ public class PhoenixxConfig
     }
 
     private static String toStringObject(Object o) {
-
         if ((o instanceof Boolean)) {
             return ((Boolean)o).toString();
         }
@@ -124,7 +113,6 @@ public class PhoenixxConfig
     }
 
     private static Object parseObject(Object o, String property) {
-
         if(o instanceof Boolean) {
             return Boolean.parseBoolean(property);
         }
@@ -145,7 +133,6 @@ public class PhoenixxConfig
     }
 
     public static void loadConfig(File dir, File file, Properties prop) {
-
         try {
             dir.mkdir();
             if ((!file.exists()) && (!file.createNewFile())) {
@@ -157,12 +144,11 @@ public class PhoenixxConfig
                 fileinputstream.close();
             }
         } catch (IOException ex) {
-            System.out.println("Could not load "+ AntiCheat.ANTICHEATNAME+"-AntiCheat Config file.");
+            System.out.println("Could not load " + AntiCheat.ANTICHEATNAME + " - Config file.");
         }
     }
 
     public static void saveConfig(File dir, File file, Properties prop, String comment) {
-
         try {
             dir.mkdir();
             if ((!file.exists()) && (!file.createNewFile())) {
@@ -174,7 +160,7 @@ public class PhoenixxConfig
                 fileoutputstream.close();
             }
         } catch (IOException ex) {
-            System.out.println("Could not save "+ AntiCheat.ANTICHEATNAME+"-AntiCheat Config file.");
+            System.out.println("Could not save " + AntiCheat.ANTICHEATNAME + " - Config file.");
         }
     }
 }
