@@ -1,6 +1,6 @@
-package com.phoenixx.proxy;
+package net.arsenalnetwork.anticheat.proxy;
 
-import com.phoenixx.configs.PhoenixxServerConfig;
+import net.arsenalnetwork.anticheat.configs.PhoenixxServerConfig;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;

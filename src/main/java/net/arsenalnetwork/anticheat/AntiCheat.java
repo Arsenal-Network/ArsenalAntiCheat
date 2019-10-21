@@ -1,9 +1,9 @@
-package com.phoenixx;
+package net.arsenalnetwork.anticheat;
 
-import com.phoenixx.handlers.AntiCheatHandler;
-import com.phoenixx.handlers.TickHandler;
-import com.phoenixx.packets.AntiCheat_Packet;
-import com.phoenixx.proxy.CommonProxy;
+import net.arsenalnetwork.anticheat.handlers.AntiCheatHandler;
+import net.arsenalnetwork.anticheat.handlers.TickHandler;
+import net.arsenalnetwork.anticheat.packets.AntiCheat_Packet;
+import net.arsenalnetwork.anticheat.proxy.CommonProxy;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
@@ -21,27 +21,24 @@ import net.minecraftforge.common.MinecraftForge;
 import java.io.File;
 import java.util.logging.Logger;
 
-/**
- * Created by Phoenixx on 12/06/2018
- */
-@Mod(modid = PhoenixxMod.MODID, name = PhoenixxMod.MODNAME, version = PhoenixxMod.VERSION)
-public class PhoenixxMod {
+@Mod(modid = AntiCheat.MODID, name = AntiCheat.MODNAME, version = AntiCheat.VERSION)
+public class AntiCheat {
 
-    public static final String MODID = "phoenixx";
-    public static final String MODNAME = "Phoenixx Anti-Cheat";
+    public static final String MODID = "watchdog";
+    public static final String MODNAME = "WatchDog Anti-Cheat";
     public static final String VERSION = "1.7.10 - 1.0.0";
 
-    public static final String ANTICHEATNAME = "Phoenixx";
-    public static final String ANTICHEAT_SHORTNAME = "PAC";
+    public static final String ANTICHEATNAME = "WatchDog Anti-Cheat";
+    public static final String ANTICHEAT_SHORTNAME = "WAC";
 
     private static Logger logger;
 
     private static TickHandler tickHandler;
 
     @Mod.Instance(MODID)
-    public static PhoenixxMod instance;
+    public static AntiCheat instance;
 
-    @SidedProxy(clientSide="com.phoenixx.proxy.ClientProxy", serverSide="com.phoenixx.proxy.ServerProxy")
+    @SidedProxy(clientSide="net.arsenalnetwork.anitcheat.proxy.ClientProxy", serverSide="net.arsenalnetwork.anitcheat.proxy.ServerProxy")
     public static CommonProxy proxy;
 
     public static final SimpleNetworkWrapper INSTANCE = NetworkRegistry.INSTANCE.newSimpleChannel("phoenixx");
@@ -67,9 +64,9 @@ public class PhoenixxMod {
         FMLCommonHandler.instance().bus().register(instance);
         MinecraftForge.EVENT_BUS.register(instance);
 
-        logger = Logger.getLogger("Phoenixx");
-        logger.info("[Phoenixx] Pssttt....I like easter eggs, don't you?");
-        logger.info("[Phoenixx] Contact me on discord at Phoenix#5518 or on twitter @Golden4Phoenix, if any issues occur :)");
+        logger = Logger.getLogger("WatchDog");
+        logger.info("[MaxIsH0t] Pssttt....I like easter eggs, don't you?");
+        logger.info("[MaxIsH0t] Contact me on discord at Phoenix#5518 or on twitter @Golden4Phoenix, if any issues occur :)");
 
         if (side.isClient())
         {
@@ -83,7 +80,7 @@ public class PhoenixxMod {
     @Mod.EventHandler
     public void serverStart(FMLServerStartingEvent event)
     {
-        System.out.println( PhoenixxMod.MODNAME + " | Server Started");
+        System.out.println( AntiCheat.MODNAME + " | Server Started");
     }
 
     @Mod.EventHandler
@@ -96,12 +93,12 @@ public class PhoenixxMod {
     @SideOnly(Side.CLIENT)
     private void clientSide()
     {
-        File configDirectory = new File(Loader.instance().getConfigDir(), "/PhoenixStudios/");
+        File configDirectory = new File(Loader.instance().getConfigDir(), "/WatchDog/");
         String loader = FMLCommonHandler.instance().getModName();
 
         if ((loader.contains("lite")) || (loader.contains("liteloader")))
         {
-            System.out.println("[" + ANTICHEATNAME+ " Anti-Cheat] Detected Lite-Loader | Shutting down...");
+            System.out.println("[" + ANTICHEATNAME + " Anti-Cheat] Detected Lite-Loader | Shutting down...");
             FMLCommonHandler.instance().exitJava(0,true);
         }
 

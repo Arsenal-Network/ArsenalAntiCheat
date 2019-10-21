@@ -1,6 +1,6 @@
-package com.phoenixx.configs;
+package net.arsenalnetwork.anticheat.configs;
 
-import com.phoenixx.PhoenixxMod;
+import net.arsenalnetwork.anticheat.AntiCheat;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.relauncher.Side;
@@ -17,7 +17,7 @@ import java.util.Properties;
 public class PhoenixxServerConfig
 {
     private static final File configDirectory = new File(Loader.instance().getConfigDir(), "/PhoenixStudios");
-    private static final File configFile = new File(configDirectory, PhoenixxMod.ANTICHEATNAME+"-AntiCheat.cfg");
+    private static final File configFile = new File(configDirectory, AntiCheat.ANTICHEATNAME+"-AntiCheat.cfg");
     private static File playerCheatingFile = new File(configDirectory, "Player_CheatingFile.txt");
 
     private static final Properties serverProps = new Properties();
@@ -48,7 +48,7 @@ public class PhoenixxServerConfig
         allowTexturePacks = (Boolean) PhoenixxConfig.loadProp(serverProps, allowTexturePacks, Boolean.FALSE, "allowTexturePacks");
 
         /** Whitelisted mods **/
-        encodedWhitelistedMods = (String)PhoenixxConfig.loadProp(serverProps, encodedWhitelistedMods,"mcp,FML,Forge,"+PhoenixxMod.MODID,"whitelistMods");
+        encodedWhitelistedMods = (String)PhoenixxConfig.loadProp(serverProps, encodedWhitelistedMods,"mcp,FML,Forge,"+ AntiCheat.MODID,"whitelistMods");
         String[] decodedModWhitelist = decodeData(encodedWhitelistedMods,",");
         loadArrayData(decodedModWhitelist, whitelistedMods);
 
@@ -81,7 +81,7 @@ public class PhoenixxServerConfig
 
     private static void saveConfig()
     {
-        PhoenixxConfig.saveConfig(configDirectory, configFile, serverProps, "~" + PhoenixxMod.ANTICHEATNAME + " Anti-Cheat Server Setup~");
+        PhoenixxConfig.saveConfig(configDirectory, configFile, serverProps, "~" + AntiCheat.ANTICHEATNAME + " Anti-Cheat Server Setup~");
     }
 
     /** Add person to cheater list */

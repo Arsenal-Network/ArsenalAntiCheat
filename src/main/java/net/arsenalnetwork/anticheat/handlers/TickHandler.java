@@ -1,7 +1,7 @@
-package com.phoenixx.handlers;
+package net.arsenalnetwork.anticheat.handlers;
 
-import com.phoenixx.PhoenixxMod;
-import com.phoenixx.packets.AntiCheat_Packet;
+import net.arsenalnetwork.anticheat.AntiCheat;
+import net.arsenalnetwork.anticheat.packets.AntiCheat_Packet;
 import cpw.mods.fml.client.FMLClientHandler;
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
@@ -41,8 +41,8 @@ public class TickHandler {
         if(!hasSentModsList && mc.theWorld != null && mc.getIntegratedServer() == null && !mc.isSingleplayer())
         {
             //System.out.println("SENDING ANTI-CHEAT PACKET");
-            PhoenixxMod.INSTANCE.sendToServer(new AntiCheat_Packet(0, AntiCheatHandler.getModIDs()));
-            PhoenixxMod.INSTANCE.sendToServer(new AntiCheat_Packet(1, AntiCheatHandler.getTexturePacks()));
+            AntiCheat.INSTANCE.sendToServer(new AntiCheat_Packet(0, AntiCheatHandler.getModIDs()));
+            AntiCheat.INSTANCE.sendToServer(new AntiCheat_Packet(1, AntiCheatHandler.getTexturePacks()));
             hasSentModsList = true;
         }
         if(mc.isSingleplayer())

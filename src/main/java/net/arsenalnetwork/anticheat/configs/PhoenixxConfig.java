@@ -1,6 +1,6 @@
-package com.phoenixx.configs;
+package net.arsenalnetwork.anticheat.configs;
 
-import com.phoenixx.PhoenixxMod;
+import net.arsenalnetwork.anticheat.AntiCheat;
 import cpw.mods.fml.common.Loader;
 
 import java.io.*;
@@ -13,12 +13,12 @@ public class PhoenixxConfig
 {
     private static final Properties clientProps = new Properties();
     private static final File configDirectory = new File(Loader.instance().getConfigDir(), "/PhoenixStudios/");
-    private static final File configFile = new File(configDirectory, PhoenixxMod.ANTICHEATNAME+"-Client.cfg");
+    private static final File configFile = new File(configDirectory, AntiCheat.ANTICHEATNAME+"-Client.cfg");
     private static File allLoadedMods = new File(configDirectory, "LoadedMods_FromLastStart.txt");
 
     public static boolean debugClient = false;
 
-    private static String defComment = "~" + PhoenixxMod.ANTICHEATNAME + "-AntiCheat Client Configuration File~";
+    private static String defComment = "~" + AntiCheat.ANTICHEATNAME + "-AntiCheat Client Configuration File~";
 
     public PhoenixxConfig()
     {
@@ -170,7 +170,7 @@ public class PhoenixxConfig
         }
         catch (IOException ex)
         {
-            System.out.println("Could not load "+PhoenixxMod.ANTICHEATNAME+"-AntiCheat Config file.");
+            System.out.println("Could not load "+ AntiCheat.ANTICHEATNAME+"-AntiCheat Config file.");
         }
     }
 
@@ -191,7 +191,7 @@ public class PhoenixxConfig
         }
         catch (IOException ex)
         {
-            System.out.println("Could not save "+PhoenixxMod.ANTICHEATNAME+"-AntiCheat Config file.");
+            System.out.println("Could not save "+ AntiCheat.ANTICHEATNAME+"-AntiCheat Config file.");
         }
     }
 }

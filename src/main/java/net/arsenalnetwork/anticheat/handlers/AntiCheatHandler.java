@@ -1,6 +1,6 @@
-package com.phoenixx.handlers;
+package net.arsenalnetwork.anticheat.handlers;
 
-import com.phoenixx.configs.PhoenixxConfig;
+import net.arsenalnetwork.anticheat.configs.PhoenixxConfig;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.ModContainer;
 import net.minecraft.client.Minecraft;
@@ -8,9 +8,6 @@ import net.minecraft.client.Minecraft;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by Phoenixx on 12/06/2018
- */
 public class AntiCheatHandler
 {
     private static Minecraft mc = Minecraft.getMinecraft();

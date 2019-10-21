@@ -1,7 +1,7 @@
-package com.phoenixx.packets;
+package net.arsenalnetwork.anticheat.packets;
 
-import com.phoenixx.PhoenixxMod;
-import com.phoenixx.configs.PhoenixxServerConfig;
+import net.arsenalnetwork.anticheat.AntiCheat;
+import net.arsenalnetwork.anticheat.configs.PhoenixxServerConfig;
 import cpw.mods.fml.common.network.ByteBufUtils;
 import cpw.mods.fml.common.network.simpleimpl.IMessage;
 import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
@@ -79,7 +79,7 @@ public class AntiCheat_Packet implements IMessage
                                 {
                                     if(!canUserConnectWithExtraBadItems(playerName))
                                     {
-                                        ctx.getServerHandler().kickPlayerFromServer(EnumChatFormatting.GREEN + EnumChatFormatting.BOLD.toString() + "[" + PhoenixxMod.ANTICHEATNAME + " Anti-Cheat]\n" + EnumChatFormatting.RESET  +"You have been kicked.\n" + EnumChatFormatting.RED + "You have mods that this server does not support! Please remove them before connecting again.\nExtra mods: " + extraMods);
+                                        ctx.getServerHandler().kickPlayerFromServer(EnumChatFormatting.GREEN + EnumChatFormatting.BOLD.toString() + "[" + AntiCheat.ANTICHEATNAME + " Anti-Cheat]\n" + EnumChatFormatting.RESET  +"You have been kicked.\n" + EnumChatFormatting.RED + "You have mods that this server does not support! Please remove them before connecting again.\nExtra mods: " + extraMods);
                                         PhoenixxServerConfig.addToCheaterList(playerName + " kicked due to extra mods: " + extraMods);
                                     }
                                 }
@@ -98,7 +98,7 @@ public class AntiCheat_Packet implements IMessage
                                 {
                                     if(!canUserConnectWithExtraBadItems(playerName))
                                     {
-                                        ctx.getServerHandler().kickPlayerFromServer(EnumChatFormatting.GREEN + EnumChatFormatting.BOLD.toString() + "[" + PhoenixxMod.ANTICHEATNAME + " Anti-Cheat]\n" + EnumChatFormatting.RESET  +"You have been kicked.\n" + EnumChatFormatting.RED + "You have texture packs that this server does not support! Please remove them before connecting again.\nExtra packs: " + extraTexturePacks);
+                                        ctx.getServerHandler().kickPlayerFromServer(EnumChatFormatting.GREEN + EnumChatFormatting.BOLD.toString() + "[" + AntiCheat.ANTICHEATNAME + " Anti-Cheat]\n" + EnumChatFormatting.RESET  +"You have been kicked.\n" + EnumChatFormatting.RED + "You have texture packs that this server does not support! Please remove them before connecting again.\nExtra packs: " + extraTexturePacks);
                                         PhoenixxServerConfig.addToCheaterList(playerName + " kicked due to extra texture packs: " + extraTexturePacks);
                                     }
                                 }
