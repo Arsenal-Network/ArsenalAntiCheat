@@ -1,9 +1,9 @@
 package net.arsenalnetwork.anticheat.handlers;
 
 import net.arsenalnetwork.anticheat.configs.WatchDogConfig;
-import cpw.mods.fml.common.Loader;
-import cpw.mods.fml.common.ModContainer;
 import net.minecraft.client.Minecraft;
+import net.minecraftforge.fml.common.Loader;
+import net.minecraftforge.fml.common.ModContainer;
 
 import javax.xml.bind.DatatypeConverter;
 import java.security.MessageDigest;

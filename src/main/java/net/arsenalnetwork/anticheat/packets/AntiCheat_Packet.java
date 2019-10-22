@@ -2,13 +2,14 @@ package net.arsenalnetwork.anticheat.packets;
 
 import net.arsenalnetwork.anticheat.AntiCheat;
 import net.arsenalnetwork.anticheat.configs.WatchDogServerConfig;
-import cpw.mods.fml.common.network.ByteBufUtils;
-import cpw.mods.fml.common.network.simpleimpl.IMessage;
-import cpw.mods.fml.common.network.simpleimpl.IMessageHandler;
-import cpw.mods.fml.common.network.simpleimpl.MessageContext;
 import io.netty.buffer.ByteBuf;
 import net.minecraft.entity.player.EntityPlayerMP;
-import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.text.TextComponentString;
+import net.minecraft.util.text.TextFormatting;
+import net.minecraftforge.fml.common.network.ByteBufUtils;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessage;
+import net.minecraftforge.fml.common.network.simpleimpl.IMessageHandler;
+import net.minecraftforge.fml.common.network.simpleimpl.MessageContext;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -48,9 +49,9 @@ public class AntiCheat_Packet implements IMessage {
         @Override
         public IMessage onMessage(AntiCheat_Packet message, MessageContext ctx) {
             if(ctx != null) {
-                EntityPlayerMP player = ctx.getServerHandler().playerEntity;
+                EntityPlayerMP player = ctx.getServerHandler().player;
                 if(player != null) {
-                    String playerName = player.getDisplayName();
+                    String playerName = player.getDisplayName().toString();
                     if(WatchDogServerConfig.useAntiCheat) {
                         // Mods
                         if(message.messageID == 0) {
@@ -59,7 +60,7 @@ public class AntiCheat_Packet implements IMessage {
                                 Collection<String> extraMods = getExtraBadItems(clientList);
                                 if(userHasExtraBadItems(clientList, true)) {
                                     if(!canUserConnectWithExtraBadItems(playerName)) {
-                                        ctx.getServerHandler().kickPlayerFromServer(EnumChatFormatting.GREEN + EnumChatFormatting.BOLD.toString() + "[" + AntiCheat.ANTICHEATNAME + "]\n" + EnumChatFormatting.RESET  +"You have been kicked.\n" + EnumChatFormatting.RED + "You have mods that this server does not support! Please remove them before connecting again.\nExtra mods: " + extraMods);
+                                        ctx.getServerHandler().disconnect(new TextComponentString(TextFormatting.GREEN + TextFormatting.BOLD.toString() + "[" + AntiCheat.ANTICHEATNAME + "]\n" + TextFormatting.RESET  +"You have been kicked.\n" + TextFormatting.RED + "You have mods that this server does not support! Please remove them before connecting again.\nExtra mods: " + extraMods));
                                         WatchDogServerConfig.addToCheaterList(playerName + " kicked due to extra mods: " + extraMods);
                                     }
                                 }

@@ -8,6 +8,9 @@
       <module name="com.yourname.ar.Project-Z-Mod.api" target="1.8" />
       <module name="com.yourname.ar.Project-Z-Mod.main" target="1.8" />
       <module name="com.yourname.ar.Project-Z-Mod.test" target="1.8" />
+      <module name="com.yourname.modid.ArsenalAntiCheat.api" target="1.8" />
+      <module name="com.yourname.modid.ArsenalAntiCheat.main" target="1.8" />
+      <module name="com.yourname.modid.ArsenalAntiCheat.test" target="1.8" />
       <module name="io.github.phantamanta44.wtflux.AntiCheat-1.7.10.api" target="1.8" />
       <module name="io.github.phantamanta44.wtflux.AntiCheat-1.7.10.main" target="1.8" />
       <module name="io.github.phantamanta44.wtflux.AntiCheat-1.7.10.test" target="1.8" />

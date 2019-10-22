@@ -1,7 +1,7 @@
 package net.arsenalnetwork.anticheat.configs;
 
 import net.arsenalnetwork.anticheat.AntiCheat;
-import cpw.mods.fml.common.Loader;
+import net.minecraftforge.fml.common.Loader;
 
 import java.io.*;
 import java.util.Properties;
