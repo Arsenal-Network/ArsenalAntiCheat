@@ -1,43 +1,23 @@
-# eclipse
-bin
-*.launch
-.settings
-.metadata
+# JetBrains stuff
+/.idea/
+*.ipr
+*.iml
+
+# Compilation output
+/target/
+/build/
+/out/
+/bin/
+/classes/
+
+# Gradle stuff
+/.gradle/
+
+# Eclipse stuff
+/.settings/
 .classpath
 .project
-*.idea
-.idea
-eclipse/
-.idea/
-.gradle/
 
-# idea
-out
-*.ipr
-*.iws
-*.iml
-.idea
-.bat
-
-run/*
-!run/**/
-run/ArsenalMod/*
-run/config/*
-run/crash-reports/*
-run/logs/*
-run/saves/*
-run/world/*
-run/production/net.arsenalnetwork.arsenalmod.Project-Z-Mod.main/*
-!run/ArsenalMod/**/
-
-# gradle
-build
-.gradle
-
-# other
-eclipse
-formatter/
-classes/
-libs/
-build/
-*.DS_Store*
+# MinecraftForge
+/eclipse/
+/run/
